@@ -1,0 +1,72 @@
+.filter-nav{
+    display: flex;
+    justify-content: space-evenly;
+
+    .search{
+        width: 250px;
+    }
+
+    @include mobile-layout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        width: 80%;
+      
+    }
+}
+    
+.bags-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    @include mobile-layout{
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+.bags-preview{
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+    height: 25%;
+    width: 25%;
+
+    @include mobile-layout{
+        height: 50%;
+        width: 50%;
+    }
+
+    background-color: #fff;
+    
+    img{
+        
+    
+    }
+    
+
+
+    .bag-info{
+
+         display: flex;
+         justify-content: space-between;
+        margin: 0.2rem;
+
+        .text-info{
+            font-size:0.3rem;
+            
+        }
+        
+        .like{
+            margin: inherit;
+            font-size:24px;
+            cursor: pointer;
+        }
+    }
+
+
+}

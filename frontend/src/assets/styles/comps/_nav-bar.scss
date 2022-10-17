@@ -1,0 +1,117 @@
+nav{
+    display: block;
+    flex-direction: column;
+}
+
+
+.main-nav{
+    background-color:$clr1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:$header-high;
+    position: relative;
+    
+    .menu-btn-mobile{
+        border: none;
+        background-color: $clr1;
+        color:$clr5;
+        margin-left: 0.2rem;
+    }
+
+
+    .menu-btn-mobile{  
+        display:none;
+
+        @include mobile-layout{
+            display:block;//see btn just when mobile mode
+        }
+    }
+    
+    .right-nav{    
+        margin: 1rem;
+        
+        .fa-shopping-cart{
+            
+            color:$clr5;
+        }
+
+        span{ 
+            margin: 0.3rem;
+        }
+    }
+
+}
+
+
+
+.left-nav{
+    background-color:rgb(31, 28, 29);
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: fixed;
+    left: -100%;
+    top: $header-high;
+    transition: 0.5s;
+
+    a{
+        color: $clr5;
+        display: inline-block;
+        margin:10px;
+    }
+    
+   
+        
+    &:hover{
+         color: rgb(31, 76, 172);
+    }
+        
+        
+}
+
+
+
+.open{
+
+   
+    
+    background-color:$clr2;
+    left: 0;
+    transition: 1s;
+
+
+}
+
+
+a{
+    text-decoration: none;
+    &:hover{
+        color: $clr6;
+   }
+}
+
+.main-nav .left-nav-web{
+    
+    @include mobile-layout{
+        display:none;//see elements just when web mode
+    }
+    
+    display:block;
+
+    .link{
+        margin-left: 1rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+

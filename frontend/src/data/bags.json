@@ -1,0 +1,46 @@
+[
+    {
+        "_id":"a1",
+        "bagName":"Monaco",
+        "price":"159$",
+        "wishList":false,
+        "img": "https://i.ibb.co/XX0dpVW/1.png"
+
+    },
+    {
+        "_id":"a2",
+        "bagName":"Koko",
+        "price":"129$",
+        "wishList":false,
+        "img": "https://i.ibb.co/XX0dpVW/1.png"
+    },
+    {
+        "_id":"a3",
+        "bagName":"Monaco",
+        "price":"159$",
+        "wishList":false,
+        "img": "https://i.ibb.co/XX0dpVW/1.png"
+
+    },   {
+        "_id":"a4",
+        "bagName":"Monaco",
+        "price":"159$",
+        "wishList":false,
+        "img": "https://i.ibb.co/XX0dpVW/1.png"
+
+    },   {
+        "_id":"a5",
+        "bagName":"Monaco",
+        "price":"159$",
+        "wishList":false,
+        "img": "https://i.ibb.co/XX0dpVW/1.png"
+
+    },   {
+        "_id":"a6",
+        "bagName":"Monaco",
+        "price":"159$",
+        "wishList":false,
+        "img": "https://i.ibb.co/XX0dpVW/1.png"
+
+    }
+]

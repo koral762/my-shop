@@ -1,0 +1,14 @@
+//setup
+@import '../setup/variables';
+@import '../setup/mixins';
+
+//Basic
+@import './basics/basics';
+
+
+//comps
+@import './comps/nav-bar';
+
+//Views
+@import './views/home-page';
+@import './views/bags-page';

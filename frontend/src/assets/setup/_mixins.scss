@@ -1,0 +1,31 @@
+//layouts
+
+@mixin mobile-layout {
+    
+    @media (max-width: $mobile-breakpoint) {
+
+        @content;
+
+    }
+    
+}
+
+@mixin tablet-layout {
+    
+    @media (min-width: $mobile-breakpoint) {
+        
+        @content;
+        
+    }
+    
+}
+
+@mixin normal-layout {
+    
+    @media (min-width: $tablet-breakpoint) {
+        
+        @content;
+        
+    }
+    
+}
