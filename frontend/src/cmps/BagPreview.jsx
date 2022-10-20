@@ -9,6 +9,7 @@ export const BagPreview = ({ bag }) => {
     const toggleWishelist = (ev) => {
 
         dispatch(saveToFavorites(ev.target.id))
+        console.log('koral test back');
 
     }
 

@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { current } from '@reduxjs/toolkit';
 import { storageService } from "../services/storageService";
+import { itemsService } from "../services/items.service";
 
 
 export const itemsReducer = createSlice({
@@ -11,6 +12,7 @@ export const itemsReducer = createSlice({
         itemsToDisplay: [],
         itemsFilter: 'All',
         shoppingCart: [],
+        obj: {}
     },
     reducers: {
 
@@ -34,15 +36,19 @@ export const itemsReducer = createSlice({
         },
 
         saveToFavorites: (state, action) => {
-            console.log('yayyy')
             const index = state.items.findIndex(item => item._id === action.payload);
-            console.log(current(state))
             const isWish = state.items[index].wishList;
 
             state.items[index].wishList = !isWish;
             state.itemsToDisplay = (state.itemsFilter !== 'All') ? state.items.filter(item => item.bagName === state.itemsFilter) : state.items;
 
             storageService.saveToStorage('BAGS', state.items);
+
+            itemsService.loadItems().then((res) => {
+                return res;
+            });
+
+
         },
 
         saveToShoppingCart: (state, action) => { },
