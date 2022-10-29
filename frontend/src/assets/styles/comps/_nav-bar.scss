@@ -11,6 +11,9 @@ nav{
     align-items: center;
     height:$header-high;
     position: relative;
+    border-bottom: 1px solid #80808030;
+    background-color: rgb(241 241 241 / 46%);
+    color:block;
     
     .menu-btn-mobile{
         border: none;
@@ -94,6 +97,8 @@ a{
 }
 
 .main-nav .left-nav-web{
+
+  
     
     @include mobile-layout{
         display:none;//see elements just when web mode
@@ -103,7 +108,14 @@ a{
 
     .link{
         margin-left: 1rem;
+        color: rgb(65, 58, 59);
+
+        &:hover{
+            color:black;
+        }
+
     }
+
     
 }
 

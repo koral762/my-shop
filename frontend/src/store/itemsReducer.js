@@ -27,7 +27,7 @@ export const itemsReducer = createSlice({
             }
 
             state.items = items;
-            state.itemsToDisplay = (state.itemsFilter !== 'All') ? items.filter(item => item.bagName === state.itemsFilter) : items;
+            state.itemsToDisplay = (state.itemsFilter !== 'All' && state.itemsFilter !== 'FILTER') ? items.filter(item => item.bagName === state.itemsFilter) : items;
         },
 
         getFilteredBags: (state, action) => {
@@ -40,7 +40,7 @@ export const itemsReducer = createSlice({
             const isWish = state.items[index].wishList;
 
             state.items[index].wishList = !isWish;
-            state.itemsToDisplay = (state.itemsFilter !== 'All') ? state.items.filter(item => item.bagName === state.itemsFilter) : state.items;
+            state.itemsToDisplay = (state.itemsFilter !== 'All' && state.itemsFilter !== 'FILTER') ? state.items.filter(item => item.bagName === state.itemsFilter) : state.items;
 
             storageService.saveToStorage('BAGS', state.items);
 

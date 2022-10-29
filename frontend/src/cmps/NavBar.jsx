@@ -9,6 +9,9 @@ export const NavBar = () => {
 
     return (
         <nav>
+            <div className="announcement-bar">
+            ONLY TODAY : 25% OFF EVERYTHING + FREE SHIPPING! Code applied at checkout
+            </div>
             <div className="main-nav">
                 <button className="menu-btn-mobile" onClick={() => { onToggleMenu() }}><i className={menuIsOpen ? "fa fa-close" :"fa fa-align-justify"} style={{ fontSize: "20px" }}></i></button>
             <div id="menu" className="left-nav-web">

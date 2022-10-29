@@ -20,7 +20,7 @@ export const Bags = () => {
 
     return (
         <div className="App">
-            <h1>Bags</h1>
+            <h1 className="products">PRODUCTS</h1>
             <BagFilter />
             <BagList bags={bags} />
         </div>
