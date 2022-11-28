@@ -23,7 +23,7 @@ export const itemsReducer = createSlice({
             if (!items) {
 
                 items = require('../data/bags.json');
-                storageService.saveToStorage('BAGS', state.items);
+                storageService.saveToStorage('BAGS', items);
             }
 
             state.items = items;
